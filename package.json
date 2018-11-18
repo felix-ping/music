@@ -1,0 +1,25 @@
+{
+  "name": "qq-music",
+  "version": "1.0.0",
+  "description": "QQ Music",
+  "main": "index.js",
+  "scripts": {
+    "dist": "node-sass --output-style compressed scss/app.scss > dist/app.css &&  webpack "
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "inline-style-prefixer": "^5.0.3",
+    "node-sass": "^4.10.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
