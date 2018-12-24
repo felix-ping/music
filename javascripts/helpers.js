@@ -6,7 +6,8 @@ export function songUrl(mid) {
       let t = (new Date).getUTCMilliseconds();
       return Math.round(2147483647 * Math.random()) * t % 1e10;
     }
-    let guid = getGuid()
+    // let guid = getGuid()
+    let guid = 9962061892
     window.callback = function(e) {
       let vkey = e.data.items[0].vkey
       let src = `http://dl.stream.qqmusic.qq.com/C400${mid}.m4a?guid=${guid}&vkey=${vkey}&uin=0&fromtag=38`
@@ -17,7 +18,6 @@ export function songUrl(mid) {
     document.body.appendChild(script)
   })
 }
-
 export function lyricsUrl(songid) {
   return `${LYRICS_URL}?id=${songid}`
 }
